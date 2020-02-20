@@ -1,0 +1,16 @@
+PODS:
+  - UICheckbox.Swift (1.0.0)
+
+DEPENDENCIES:
+  - UICheckbox.Swift (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - UICheckbox.Swift
+
+SPEC CHECKSUMS:
+  UICheckbox.Swift: 85715689206fac5bae38b308f19c2a3e00442c3b
+
+PODFILE CHECKSUM: d1478b4071ca3fb7f96ee37dbc5ab81810ba24d7
+
+COCOAPODS: 1.8.4

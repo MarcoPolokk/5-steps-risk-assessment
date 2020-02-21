@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		5F0D53C523FECEFD0097E531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D53C323FECEFD0097E531 /* Main.storyboard */; };
 		5F0D53C723FECEFE0097E531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D53C623FECEFE0097E531 /* Assets.xcassets */; };
 		5F0D53CA23FECEFE0097E531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D53C823FECEFE0097E531 /* LaunchScreen.storyboard */; };
+		5F55930E23FEE81F00FB60DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F55930D23FEE81F00FB60DF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		5F0D53C623FECEFE0097E531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F0D53C923FECEFE0097E531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F0D53CB23FECEFE0097E531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F55930D23FEE81F00FB60DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D1AFE25511D03DD75DCFB415 /* Pods-CX-Take5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CX-Take5.release.xcconfig"; path = "Target Support Files/Pods-CX-Take5/Pods-CX-Take5.release.xcconfig"; sourceTree = "<group>"; };
 		F39128625B7F19C8796F4E6B /* Pods-CX-Take5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CX-Take5.debug.xcconfig"; path = "Target Support Files/Pods-CX-Take5/Pods-CX-Take5.debug.xcconfig"; sourceTree = "<group>"; };
 		FC6C369AE4F1E922DD30C868 /* Pods_CX_Take5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CX_Take5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +72,7 @@
 				5F0D53C623FECEFE0097E531 /* Assets.xcassets */,
 				5F0D53C823FECEFE0097E531 /* LaunchScreen.storyboard */,
 				5F0D53CB23FECEFE0097E531 /* Info.plist */,
+				5F55930D23FEE81F00FB60DF /* Constants.swift */,
 			);
 			path = "CX-Take5";
 			sourceTree = "<group>";
@@ -104,7 +107,6 @@
 				F39128625B7F19C8796F4E6B /* Pods-CX-Take5.debug.xcconfig */,
 				D1AFE25511D03DD75DCFB415 /* Pods-CX-Take5.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -224,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F0D53C223FECEFD0097E531 /* ViewController.swift in Sources */,
+				5F55930E23FEE81F00FB60DF /* Constants.swift in Sources */,
 				5F0D53BE23FECEFD0097E531 /* AppDelegate.swift in Sources */,
 				5F0D53C023FECEFD0097E531 /* SceneDelegate.swift in Sources */,
 			);

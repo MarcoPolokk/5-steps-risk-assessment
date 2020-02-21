@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UICheckbox_Swift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

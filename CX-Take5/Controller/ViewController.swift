@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         label2Description.text = K.Polish.label2Description
         label3.text = K.Polish.label3Text
         label3Description.text = K.Polish.label3Description
-        label4.text = K.Polish.label4Description
+        label4.text = K.Polish.label4Text
         label5.text = K.Polish.label5Text
         
     }

@@ -65,6 +65,7 @@
 		5F0D53BC23FECEFD0097E531 /* CX-Take5 */ = {
 			isa = PBXGroup;
 			children = (
+				5F188BEE24017E4C0098D405 /* Model */,
 				5F0D53D223FECF720097E531 /* Controller */,
 				5F0D53D123FECF420097E531 /* View */,
 				5F0D53BD23FECEFD0097E531 /* AppDelegate.swift */,
@@ -72,7 +73,6 @@
 				5F0D53C623FECEFE0097E531 /* Assets.xcassets */,
 				5F0D53C823FECEFE0097E531 /* LaunchScreen.storyboard */,
 				5F0D53CB23FECEFE0097E531 /* Info.plist */,
-				5F55930D23FEE81F00FB60DF /* Constants.swift */,
 			);
 			path = "CX-Take5";
 			sourceTree = "<group>";
@@ -91,6 +91,14 @@
 				5F0D53C123FECEFD0097E531 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F188BEE24017E4C0098D405 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F55930D23FEE81F00FB60DF /* Constants.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6B9C4CE89FCAFA03033B261B /* Frameworks */ = {

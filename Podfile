@@ -2,10 +2,10 @@
 # platform :ios, '9.0'
 
 target 'CX-Take5' do
+  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for CX-Take5
-
-    pod 'UICheckbox.Swift', '~> 1.0'
+    pod 'M13Checkbox'
 
 end

@@ -14,11 +14,12 @@ struct K {
         
         static let label1Text = "1. Zatrzymaj się, rozejrzyj, sprawdź otoczenie"
         static let label2Text = "2. Przemyśl wykonywaną pracę"
-        static let label2Description = "• Czy wiem, jak bezpiecznie wykonać zadanie?\n • Czy mam odpowiednie środki ochrony indywidualnej?\n • Czy potrzebuję pomocy współpracowników?"
+        static let label2Description = "• Czy wiem, jak bezpiecznie wykonać zadanie?\n• Czy mam odpowiednie środki ochrony indywidualnej?\n• Czy potrzebuję pomocy współpracowników?"
         static let label3Text = "3. Zidentyfikuj zagrożenia"
-        static let label3Description = "• Co może pójść nie tak?\n • W jaki sposób mogę zranić siebie lub innych?"
+        static let label3Description = "• Co może pójść nie tak?\n• W jaki sposób mogę zranić siebie lub innych?"
         static let label4Text = "4. Kontroluj oraz komunikuj ryzyko"
         static let label4Description = "• Czego potrzebuję do zapewnienia sobie bezpieczeństwa"
         static let label5Text = "5. Czy mogę wykonać to zadanie bezpiecznie?"
+        static let warningLabel = "Jeśli nie możesz spełnić wszystkich punktów kontroli, nie podejmuj pracy!\nZgłoś się do swojego przełożonego"
     }
 }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import UICheckbox_Swift
+import M13Checkbox
 
 class ViewController: UIViewController {
     
@@ -32,6 +32,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var label5: UILabel!
     @IBOutlet weak var label5TextField: UITextField!
     
+    @IBOutlet weak var checkbox1: M13Checkbox!
+    
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var warningLabel: UILabel!
     @IBOutlet weak var sendButton: UIButton!
@@ -44,8 +47,9 @@ class ViewController: UIViewController {
         label3.text = K.Polish.label3Text
         label3Description.text = K.Polish.label3Description
         label4.text = K.Polish.label4Text
+        label4Description.text = K.Polish.label4Description
         label5.text = K.Polish.label5Text
-        
+        warningLabel.text = K.Polish.warningLabel
     }
 }
 

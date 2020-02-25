@@ -10,16 +10,16 @@
         <!--Take5-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CX_Take5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CX_Take5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92e-df-cdY">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1078"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5f-pi-fYD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1250"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1082"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6RG-qS-Qnp">
                                                 <rect key="frame" x="0.0" y="10" width="414" height="316.5"/>
@@ -76,7 +76,7 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Zatrzymaj się, rozejrzyj, sprawdź otoczenie" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYJ-JP-xse">
-                                                <rect key="frame" x="8" y="347.5" width="360" height="43"/>
+                                                <rect key="frame" x="8" y="347.5" width="355" height="43"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -87,7 +87,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Przemyśl wykonywaną pracę" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TQ-QM-DWg">
-                                                <rect key="frame" x="8" y="461.5" width="271" height="21.5"/>
+                                                <rect key="frame" x="8" y="461.5" width="355" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -104,7 +104,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Zidentyfikuj zagrożenia" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zLG-gT-yVP">
-                                                <rect key="frame" x="8" y="597.5" width="224" height="21.5"/>
+                                                <rect key="frame" x="8" y="597.5" width="355" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -121,7 +121,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Kontroluj oraz komunikuj ryzyko" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Oq-Y6-yWH">
-                                                <rect key="frame" x="8" y="733.5" width="299" height="21.5"/>
+                                                <rect key="frame" x="8" y="733.5" width="355" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -138,29 +138,29 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. Czy mogę wykonać to zadanie bezpiecznie?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lRy-LV-6Gy">
-                                                <rect key="frame" x="8" y="869.5" width="399" height="21.5"/>
+                                                <rect key="frame" x="8" y="869.5" width="355" height="43"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Komentarz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxL-dw-uE8">
-                                                <rect key="frame" x="8" y="909" width="398" height="34"/>
+                                                <rect key="frame" x="8" y="930.5" width="398" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W4k-bA-rTE">
-                                                <rect key="frame" x="8" y="951" width="398" height="34"/>
+                                                <rect key="frame" x="8" y="972.5" width="398" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="warningLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UH-eI-Rf1">
-                                                <rect key="frame" x="8" y="993" width="398" height="21.5"/>
+                                                <rect key="frame" x="8" y="1014.5" width="398" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDl-3y-EXN">
-                                                <rect key="frame" x="8" y="1022.5" width="398" height="30"/>
+                                                <rect key="frame" x="8" y="1044" width="398" height="30"/>
                                                 <color key="backgroundColor" red="0.61251091957092285" green="0.78587251901626587" blue="0.96080547571182251" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" title="WYŚLIJ">
@@ -168,18 +168,114 @@
                                                 </state>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SW0-op-DEl" customClass="M13Checkbox" customModule="M13Checkbox">
-                                                <rect key="frame" x="376" y="344" width="30" height="30"/>
+                                                <rect key="frame" x="371" y="344.5" width="35" height="35"/>
                                                 <color key="backgroundColor" red="0.89037251472473145" green="0.94846910238265991" blue="0.99215763807296753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="30" id="SKx-nz-4TQ"/>
-                                                    <constraint firstAttribute="height" constant="30" id="vIf-Tk-z3X"/>
+                                                    <constraint firstAttribute="width" constant="35" id="SKx-nz-4TQ"/>
+                                                    <constraint firstAttribute="height" constant="35" id="vIf-Tk-z3X"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="boxLineWidth">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
+                                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
+                                                        <real key="value" value="1.8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMk-Ab-NYJ" userLabel="Checkbox2" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                <rect key="frame" x="371" y="458.5" width="35" height="35"/>
+                                                <color key="backgroundColor" red="0.89037251470000001" green="0.94846910240000004" blue="0.99215763810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="WBH-Af-iah"/>
+                                                    <constraint firstAttribute="width" constant="35" id="k3a-Og-kXq"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="boxLineWidth">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
+                                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="square"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
+                                                        <real key="value" value="1.8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9K7-Qg-NVz" userLabel="Checkbox3" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                <rect key="frame" x="371" y="594.5" width="35" height="35"/>
+                                                <color key="backgroundColor" red="0.89037251470000001" green="0.94846910240000004" blue="0.99215763810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="ZKs-0t-4w4"/>
+                                                    <constraint firstAttribute="width" constant="35" id="glM-AA-omX"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="boxLineWidth">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
+                                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="square"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
+                                                        <real key="value" value="1.8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVU-CQ-hXl" userLabel="Checkbox4" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                <rect key="frame" x="371" y="730.5" width="35" height="35"/>
+                                                <color key="backgroundColor" red="0.89037251470000001" green="0.94846910240000004" blue="0.99215763810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="30g-3J-xUt"/>
+                                                    <constraint firstAttribute="height" constant="35" id="729-mb-tkR"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="boxLineWidth">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
+                                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="square"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
+                                                        <real key="value" value="1.8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fg-Hk-i87" userLabel="Checkbox5" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                <rect key="frame" x="371" y="866.5" width="35" height="35"/>
+                                                <color key="backgroundColor" red="0.89037251470000001" green="0.94846910240000004" blue="0.99215763810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="Ski-aj-hF9"/>
+                                                    <constraint firstAttribute="width" constant="35" id="eoY-iv-WSw"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="boxLineWidth">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
+                                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="square"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
+                                                        <real key="value" value="1.8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90210968255996704" green="0.94852226972579956" blue="0.98823517560958862" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="wDL-TU-QDX" firstAttribute="top" secondItem="0Oq-Y6-yWH" secondAttribute="bottom" constant="20" id="0SM-HM-Kpu"/>
+                                            <constraint firstItem="EVU-CQ-hXl" firstAttribute="top" secondItem="nvc-0g-hSO" secondAttribute="bottom" constant="18" id="2Of-qJ-JyG"/>
                                             <constraint firstItem="W4k-bA-rTE" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="2gH-BS-gAC"/>
                                             <constraint firstAttribute="trailing" secondItem="W4k-bA-rTE" secondAttribute="trailing" constant="8" id="42T-L8-Vep"/>
                                             <constraint firstItem="3Xo-XP-3ac" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="59W-mo-hgb"/>
@@ -187,12 +283,16 @@
                                             <constraint firstAttribute="trailing" secondItem="SW0-op-DEl" secondAttribute="trailing" constant="8" id="5sq-vZ-s12"/>
                                             <constraint firstItem="jxA-lg-KQH" firstAttribute="top" secondItem="unH-b0-jyS" secondAttribute="bottom" constant="18" id="7YM-q7-gbX"/>
                                             <constraint firstAttribute="trailing" secondItem="3Xo-XP-3ac" secondAttribute="trailing" constant="8" id="8ew-W6-zbi"/>
+                                            <constraint firstAttribute="trailing" secondItem="EVU-CQ-hXl" secondAttribute="trailing" constant="8" id="9Tk-3p-cLu"/>
                                             <constraint firstItem="jxA-lg-KQH" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="A2X-no-vGN"/>
+                                            <constraint firstItem="cMk-Ab-NYJ" firstAttribute="leading" secondItem="0TQ-QM-DWg" secondAttribute="trailing" constant="8" id="ANF-Pr-NRD"/>
+                                            <constraint firstItem="cMk-Ab-NYJ" firstAttribute="top" secondItem="mq5-6d-gIs" secondAttribute="bottom" constant="18" id="BiP-2h-o7q"/>
                                             <constraint firstAttribute="trailing" secondItem="x4w-Eu-52A" secondAttribute="trailing" constant="8" id="DZF-5W-nxK"/>
                                             <constraint firstItem="zLG-gT-yVP" firstAttribute="top" secondItem="jxA-lg-KQH" secondAttribute="bottom" constant="21" id="Dml-xC-kh2"/>
                                             <constraint firstAttribute="trailing" secondItem="7UH-eI-Rf1" secondAttribute="trailing" constant="8" id="DnD-w8-sTk"/>
                                             <constraint firstItem="mq5-6d-gIs" firstAttribute="top" secondItem="yYJ-JP-xse" secondAttribute="bottom" constant="16" id="EhY-gm-nJT"/>
                                             <constraint firstItem="7UH-eI-Rf1" firstAttribute="top" secondItem="W4k-bA-rTE" secondAttribute="bottom" constant="8" id="FIM-oM-6gG"/>
+                                            <constraint firstAttribute="trailing" secondItem="9fg-Hk-i87" secondAttribute="trailing" constant="8" id="GN9-Wy-xsD"/>
                                             <constraint firstItem="7UH-eI-Rf1" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="Gfj-jn-L23"/>
                                             <constraint firstItem="yYJ-JP-xse" firstAttribute="top" secondItem="6RG-qS-Qnp" secondAttribute="bottom" constant="21" id="HDN-na-VGS"/>
                                             <constraint firstItem="SW0-op-DEl" firstAttribute="leading" secondItem="yYJ-JP-xse" secondAttribute="trailing" constant="8" id="KEm-68-dOi"/>
@@ -201,29 +301,37 @@
                                             <constraint firstItem="0Oq-Y6-yWH" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="Lg1-WI-sX7"/>
                                             <constraint firstAttribute="trailing" secondItem="wDL-TU-QDX" secondAttribute="trailing" constant="8" id="M3u-y9-cjG"/>
                                             <constraint firstItem="unH-b0-jyS" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="Mwr-da-rfH"/>
+                                            <constraint firstItem="9fg-Hk-i87" firstAttribute="leading" secondItem="lRy-LV-6Gy" secondAttribute="trailing" constant="8" id="NHq-Ni-0fv"/>
                                             <constraint firstItem="lRy-LV-6Gy" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="Npa-4X-1Dk"/>
                                             <constraint firstAttribute="trailing" secondItem="nvc-0g-hSO" secondAttribute="trailing" constant="8" id="O26-fq-AFS"/>
+                                            <constraint firstItem="9K7-Qg-NVz" firstAttribute="leading" secondItem="zLG-gT-yVP" secondAttribute="trailing" constant="8" id="OhC-hM-jR1"/>
                                             <constraint firstItem="0TQ-QM-DWg" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="Q4B-Ez-6da"/>
                                             <constraint firstItem="mq5-6d-gIs" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="QTg-Na-BWh"/>
                                             <constraint firstItem="0Oq-Y6-yWH" firstAttribute="top" secondItem="nvc-0g-hSO" secondAttribute="bottom" constant="21" id="Qby-xG-oED"/>
+                                            <constraint firstItem="EVU-CQ-hXl" firstAttribute="leading" secondItem="0Oq-Y6-yWH" secondAttribute="trailing" constant="8" id="R6S-ZY-MZE"/>
                                             <constraint firstItem="eDl-3y-EXN" firstAttribute="top" secondItem="7UH-eI-Rf1" secondAttribute="bottom" constant="8" id="TFU-1n-XXK"/>
                                             <constraint firstItem="0TQ-QM-DWg" firstAttribute="top" secondItem="mq5-6d-gIs" secondAttribute="bottom" constant="21" id="Vvv-4W-0dJ"/>
                                             <constraint firstItem="x4w-Eu-52A" firstAttribute="top" secondItem="wDL-TU-QDX" secondAttribute="bottom" constant="18" id="ZOb-2t-m5g"/>
+                                            <constraint firstItem="9K7-Qg-NVz" firstAttribute="top" secondItem="jxA-lg-KQH" secondAttribute="bottom" constant="18" id="Zbj-AR-w3g"/>
                                             <constraint firstItem="3Xo-XP-3ac" firstAttribute="top" secondItem="zLG-gT-yVP" secondAttribute="bottom" constant="20" id="aX1-FG-Ndr"/>
                                             <constraint firstItem="sxL-dw-uE8" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="brM-yr-DOC"/>
+                                            <constraint firstAttribute="bottom" secondItem="eDl-3y-EXN" secondAttribute="bottom" constant="8" id="c0b-Ku-50w"/>
                                             <constraint firstAttribute="trailing" secondItem="mq5-6d-gIs" secondAttribute="trailing" constant="8" id="c5M-ru-1y3"/>
+                                            <constraint firstItem="9fg-Hk-i87" firstAttribute="top" secondItem="x4w-Eu-52A" secondAttribute="bottom" constant="18" id="eMl-Vz-6PT"/>
                                             <constraint firstItem="6RG-qS-Qnp" firstAttribute="top" secondItem="F5f-pi-fYD" secondAttribute="top" constant="10" id="eff-wf-0EU"/>
                                             <constraint firstItem="zLG-gT-yVP" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="g1f-gE-D9d"/>
                                             <constraint firstAttribute="trailing" secondItem="6RG-qS-Qnp" secondAttribute="trailing" id="iSj-gR-win"/>
                                             <constraint firstItem="6RG-qS-Qnp" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" id="jYi-m0-mbo"/>
                                             <constraint firstItem="nvc-0g-hSO" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="jaw-nO-VGv"/>
                                             <constraint firstAttribute="trailing" secondItem="eDl-3y-EXN" secondAttribute="trailing" constant="8" id="klq-gP-66W"/>
-                                            <constraint firstItem="SW0-op-DEl" firstAttribute="top" secondItem="6RG-qS-Qnp" secondAttribute="bottom" constant="17.5" id="mhl-XR-uA7"/>
-                                            <constraint firstAttribute="height" constant="1250" id="nBh-wJ-Qmu"/>
+                                            <constraint firstItem="SW0-op-DEl" firstAttribute="top" secondItem="6RG-qS-Qnp" secondAttribute="bottom" constant="18" id="mhl-XR-uA7"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" priority="251" constant="1300" id="nBh-wJ-Qmu"/>
                                             <constraint firstItem="W4k-bA-rTE" firstAttribute="top" secondItem="sxL-dw-uE8" secondAttribute="bottom" constant="8" id="pzE-WH-ltD"/>
                                             <constraint firstItem="yYJ-JP-xse" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="q0t-iA-lRi"/>
                                             <constraint firstItem="wDL-TU-QDX" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="qAg-T5-Ku2"/>
                                             <constraint firstItem="nvc-0g-hSO" firstAttribute="top" secondItem="3Xo-XP-3ac" secondAttribute="bottom" constant="18" id="ryJ-Yl-vUc"/>
+                                            <constraint firstAttribute="trailing" secondItem="cMk-Ab-NYJ" secondAttribute="trailing" constant="8" id="wBt-yq-KXN"/>
+                                            <constraint firstAttribute="trailing" secondItem="9K7-Qg-NVz" secondAttribute="trailing" constant="8" id="wWq-fM-ese"/>
                                             <constraint firstAttribute="trailing" secondItem="jxA-lg-KQH" secondAttribute="trailing" constant="8" id="xEi-x5-hA8"/>
                                             <constraint firstItem="eDl-3y-EXN" firstAttribute="leading" secondItem="F5f-pi-fYD" secondAttribute="leading" constant="8" id="xMi-M1-CwG"/>
                                             <constraint firstItem="lRy-LV-6Gy" firstAttribute="top" secondItem="x4w-Eu-52A" secondAttribute="bottom" constant="21" id="xsF-Yg-4rl"/>
@@ -251,9 +359,38 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Take5" id="iSJ-cS-uQB"/>
+                    <navigationItem key="navigationItem" title="Take5" id="iSJ-cS-uQB">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Hc9-Nf-2Mv">
+                            <view key="customView" contentMode="scaleToFill" id="6HH-kA-p5H">
+                                <rect key="frame" x="302" y="5.5" width="92" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCMX" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="udG-bL-Qj2">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="92" id="kDS-2b-aj6"/>
+                                            <constraint firstAttribute="height" constant="33" id="qrh-9y-2Kb"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="udG-bL-Qj2" secondAttribute="trailing" id="dhl-5j-exX"/>
+                                    <constraint firstAttribute="bottom" secondItem="udG-bL-Qj2" secondAttribute="bottom" id="qwQ-7A-LUe"/>
+                                    <constraint firstItem="udG-bL-Qj2" firstAttribute="leading" secondItem="6HH-kA-p5H" secondAttribute="leading" id="spR-7J-z8L"/>
+                                    <constraint firstItem="udG-bL-Qj2" firstAttribute="top" secondItem="6HH-kA-p5H" secondAttribute="top" id="y2c-0X-ACL"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="414" height="1200"/>
                     <connections>
                         <outlet property="checkbox1" destination="SW0-op-DEl" id="Vic-2y-4qC"/>
+                        <outlet property="checkbox2" destination="cMk-Ab-NYJ" id="Z0S-sC-c7C"/>
+                        <outlet property="checkbox3" destination="9K7-Qg-NVz" id="yCa-41-3hh"/>
+                        <outlet property="checkbox4" destination="EVU-CQ-hXl" id="B8n-Ho-8b2"/>
+                        <outlet property="checkbox5" destination="9fg-Hk-i87" id="dYV-Jx-29g"/>
                         <outlet property="dateLabel" destination="J3Y-yJ-jgM" id="ohZ-w2-9Fn"/>
                         <outlet property="datePicker" destination="kja-Hr-71r" id="uHw-dc-Mye"/>
                         <outlet property="dateTextField" destination="weW-mO-X7e" id="qRd-E5-jSS"/>
@@ -287,9 +424,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3cm-Jb-zhb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HsO-AT-kuB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" insetsLayoutMarginsFromSafeArea="NO" id="HsO-AT-kuB">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -301,4 +442,7 @@
             <point key="canvasLocation" x="1957.9710144927537" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logoCMX" width="240" height="84"/>
+    </resources>
 </document>

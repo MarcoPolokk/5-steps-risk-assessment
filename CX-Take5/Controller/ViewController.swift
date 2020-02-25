@@ -33,7 +33,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var label5TextField: UITextField!
     
     @IBOutlet weak var checkbox1: M13Checkbox!
-    
+    @IBOutlet weak var checkbox2: M13Checkbox!
+    @IBOutlet weak var checkbox3: M13Checkbox!
+    @IBOutlet weak var checkbox4: M13Checkbox!
+    @IBOutlet weak var checkbox5: M13Checkbox!
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var warningLabel: UILabel!
@@ -50,6 +53,18 @@ class ViewController: UIViewController {
         label4Description.text = K.Polish.label4Description
         label5.text = K.Polish.label5Text
         warningLabel.text = K.Polish.warningLabel
+        
+        checkbox1._IBStateChangeAnimation = "BounceFill"
+        checkbox2._IBStateChangeAnimation = "BounceFill"
+        checkbox3._IBStateChangeAnimation = "BounceFill"
+        checkbox4._IBStateChangeAnimation = "BounceFill"
+        checkbox5._IBStateChangeAnimation = "BounceFill"
+        checkbox1.boxType = .square
+        checkbox2.boxType = .square
+        checkbox3.boxType = .square
+        checkbox4.boxType = .square
+        checkbox5.boxType = .square
+    
+//        self.navigationItem.titleView?.contentMode = .scaleAspectFit
     }
 }
-

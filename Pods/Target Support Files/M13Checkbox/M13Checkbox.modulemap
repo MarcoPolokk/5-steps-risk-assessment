@@ -1,4 +1,4 @@
-framework module M13Checkbox {
+module M13Checkbox {
   umbrella header "M13Checkbox-umbrella.h"
 
   export *

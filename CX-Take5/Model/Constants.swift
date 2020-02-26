@@ -10,6 +10,11 @@ import Foundation
 
 struct K {
     
+    struct Other {
+        
+         static let animation = "BounceFill"
+    }
+    
     struct Polish {
         
         static let label1Text = "1. Zatrzymaj się, rozejrzyj, sprawdź otoczenie"
@@ -21,5 +26,8 @@ struct K {
         static let label4Description = "• Czego potrzebuję do zapewnienia sobie bezpieczeństwa"
         static let label5Text = "5. Czy mogę wykonać to zadanie bezpiecznie?"
         static let warningLabel = "Jeśli nie możesz spełnić wszystkich punktów kontroli, nie podejmuj pracy!\nZgłoś się do swojego przełożonego"
+        
+        static let subject = "Wykonano ocenę ryzyka Take5"
+//        static let message = "Imię i nazwisko:\(nameTextField)/n Data:\()/n Miejsce:\()/n Opis pracy:\()/n/n 1. Zatrzymaj się, rozejrzyj, sprawdź otoczenie/n Komentarz:\()/n 2. Przemyśl wykonywaną pracę/n Komentarz:\()/n 3. Zidentyfikuj Zagrożenia/n Komentarz:\()/n 4. Kontroluj oraz Komunikuj Ryzyko Komentarz:\()/n 5. Czy mogę wykonać to zadanie bezpiecznie?/n Komentarz:\()/n"
     }
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		482ADA115928CC8C9AF86A8E /* Pods_CX_Take5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB5745C9B10AB760FA224E3 /* Pods_CX_Take5.framework */; };
+		07BFFFBD38E5E38074A7D94F /* libPods-CX-Take5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF7311A9EED59CB46982D47 /* libPods-CX-Take5.a */; };
 		5F0D53BE23FECEFD0097E531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D53BD23FECEFD0097E531 /* AppDelegate.swift */; };
 		5F0D53C023FECEFD0097E531 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D53BF23FECEFD0097E531 /* SceneDelegate.swift */; };
 		5F0D53C223FECEFD0097E531 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D53C123FECEFD0097E531 /* ViewController.swift */; };
@@ -45,8 +45,8 @@
 		5F52F69124053B8B008F26A4 /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F55930D23FEE81F00FB60DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5F9D7F7B24056DFD00E90B4F /* libM13Checkbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libM13Checkbox.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DB5745C9B10AB760FA224E3 /* Pods_CX_Take5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CX_Take5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85F70F0E6504DB852D3B6F2 /* Pods-CX-Take5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CX-Take5.debug.xcconfig"; path = "Target Support Files/Pods-CX-Take5/Pods-CX-Take5.debug.xcconfig"; sourceTree = "<group>"; };
+		EBF7311A9EED59CB46982D47 /* libPods-CX-Take5.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CX-Take5.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				482ADA115928CC8C9AF86A8E /* Pods_CX_Take5.framework in Frameworks */,
+				07BFFFBD38E5E38074A7D94F /* libPods-CX-Take5.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +131,7 @@
 			children = (
 				5F9D7F7B24056DFD00E90B4F /* libM13Checkbox.a */,
 				5F52F69124053B8B008F26A4 /* M13Checkbox.framework */,
-				8DB5745C9B10AB760FA224E3 /* Pods_CX_Take5.framework */,
+				EBF7311A9EED59CB46982D47 /* libPods-CX-Take5.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,7 +157,6 @@
 				5F0D53B723FECEFD0097E531 /* Frameworks */,
 				5F0D53B823FECEFD0097E531 /* Resources */,
 				5FBB58AF240533CC008E52E4 /* Embed Frameworks */,
-				6D42B108545771A4991CDF6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,23 +234,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6D42B108545771A4991CDF6F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CX-Take5/Pods-CX-Take5-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CX-Take5/Pods-CX-Take5-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CX-Take5/Pods-CX-Take5-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

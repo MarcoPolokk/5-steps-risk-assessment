@@ -6,13 +6,17 @@
 //  Copyright © 2020 Paweł Kozioł. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct K {
     
     struct Other {
         
-         static let animation = "BounceFill"
+        static let animation = "BounceFill"
+        static let checked = "checked"
+        static let green = #colorLiteral(red: 0.1960784314, green: 0.8431372549, blue: 0.2941176471, alpha: 1)
+        static let red = #colorLiteral(red: 1, green: 0.2156862745, blue: 0.3725490196, alpha: 1)
+        static let polish = "pl_PL"
     }
     
     struct Polish {
@@ -34,6 +38,13 @@ struct K {
         static let data3 = "Miejsce: "
         static let data4 = "Opis pracy: "
         static let comm = "Komentarz: "
-        static let end = "WYSŁANO"
+        
+        static let cancelled = "Anulowano"
+        static let failed = "Błąd przy wysyłaniu"
+        static let saved = "Zapisano"
+        static let sent = "Wysłano"
+        static let error = "Błąd"
+        
+        
     }
 }

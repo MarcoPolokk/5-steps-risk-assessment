@@ -7,22 +7,25 @@
 //
 
 import UIKit
+import M13Checkbox
 
-class EndViewController: UIViewController, DidSendDelegate {
-    
-    var polishViewController = PolishViewController()
+class EndViewController: UIViewController {
     
     @IBOutlet weak var endLabel: UILabel!
+    @IBOutlet weak var checkbox0: M13Checkbox!
     
+    public var information: String? = nil
+    public var tintColor: UIColor?
+    public var secondaryTintColor: UIColor?
     
     override func viewDidLoad() {
-        polishViewController.delegate = self
-        updateLabel(updatedLabel: endLabel.text!)
-    }
-    
-    func updateLabel(updatedLabel: String) {
-        DispatchQueue.main.async {
-            self.endLabel.text = updatedLabel
+        endLabel.text = information
+        
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { (Timer) in
+            self.checkbox0.setCheckState(.checked, animated: true)
         }
+        checkbox0._IBStateChangeAnimation = K.Other.animation
+        checkbox0.tintColor = tintColor
+        checkbox0.secondaryTintColor = secondaryTintColor
     }
 }

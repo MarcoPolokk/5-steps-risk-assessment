@@ -11,13 +11,7 @@ import MessageUI
 import M13Checkbox
 import CoreGraphics
 
-protocol DidSendDelegate {
-    func updateLabel(updatedLabel: String)
-}
-
 class PolishViewController: UIViewController {
-    
-    var delegate: DidSendDelegate?
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var workplaceTextField: UITextField!
@@ -53,6 +47,9 @@ class PolishViewController: UIViewController {
     var date = String()
     var dateHolder = Date()
     var screenShot = UIImage()
+    var sendEndLabel = String()
+    var tintColor = UIColor()
+    var secondaryTintColor = UIColor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -99,9 +96,19 @@ class PolishViewController: UIViewController {
     
     func defaultingDate() {
         dateHolder = datePicker.date
+        //        datePicker.locale?.identifier = K.Other.polish
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-YYYY"
         date = dateFormatter.string(from: dateHolder)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? EndViewController {
+            destinationVC.information = self.sendEndLabel
+            destinationVC.tintColor = self.tintColor
+            destinationVC.secondaryTintColor = self.secondaryTintColor
+            return
+        }
     }
     
     func resetSegue() {
@@ -214,30 +221,37 @@ extension PolishViewController: MFMailComposeViewControllerDelegate {
         if let _ = error {
             //Show error alert
             controller.dismiss(animated: true)
-            let label = "Błąd"
-            delegate?.updateLabel(updatedLabel: label)
+            sendEndLabel = K.Polish.error
+            tintColor = K.Other.red
+            secondaryTintColor = K.Other.red
             resetSegue()
             return
         }
         
         switch result {
         case .cancelled:
-            let label = "Anulowano"
-            delegate?.updateLabel(updatedLabel: label)
+            sendEndLabel = K.Polish.cancelled
+            tintColor = K.Other.red
+            secondaryTintColor = K.Other.red
         case .failed:
-            let label = "Błąd przy wysyłaniu"
-            delegate?.updateLabel(updatedLabel: label)
+            sendEndLabel = K.Polish.failed
+            tintColor = K.Other.red
+            secondaryTintColor = K.Other.red
         case .saved:
-            let label = "Zapisano"
-            delegate?.updateLabel(updatedLabel: label)
+            sendEndLabel = K.Polish.saved
+            tintColor = K.Other.green
+            secondaryTintColor = K.Other.green
         case .sent:
-            let label = "Wysłano"
-            delegate?.updateLabel(updatedLabel: label)
+            sendEndLabel = K.Polish.sent
+            tintColor = K.Other.green
+            secondaryTintColor = K.Other.green
         @unknown default:
             fatalError()
         }
         
         controller.dismiss(animated: true)
+        print(sendEndLabel)
         resetSegue()
+        return
     }
 }

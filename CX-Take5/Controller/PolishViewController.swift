@@ -12,7 +12,7 @@ import M13Checkbox
 import CoreGraphics
 
 //mozna zrobic inne VC ktore dziedzicza ta i tylko overridowac vievDidLoad
-class ViewController: UIViewController {
+class PolishViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var workplaceTextField: UITextField!
@@ -48,6 +48,7 @@ class ViewController: UIViewController {
     var date = String()
     var dateHolder = Date()
     var screenShot = UIImage()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,6 +88,7 @@ class ViewController: UIViewController {
         defaultingDate()
     }
     
+    
     @IBAction func datePickerChanged(_ sender: UIDatePicker) {
         defaultingDate()
     }
@@ -98,123 +100,125 @@ class ViewController: UIViewController {
         date = dateFormatter.string(from: dateHolder)
     }
     
+    func resetSegue() {
+        self.navigationController?.popViewController(animated: false)
+    }
+    
     
     //MARK: - E-mail functionality
     @IBAction func sendPressed(_ sender: UIButton) {
         let ss = doScreenShot()
         screenShot = ss!
         showMailComposer()
-        
     }
     
     func doScreenShot() -> UIImage? {
-        var image = UIImage()
-
-        UIGraphicsBeginImageContextWithOptions(self.scrollView.contentSize, false, UIScreen.main.scale)
-
+        
         // save initial values
-        let savedContentOffset = self.scrollView.contentOffset
-        let savedFrame = self.scrollView.frame
-        let savedBackgroundColor = self.scrollView.backgroundColor
-
-        // reset offset to top left point
-        self.scrollView.contentOffset = CGPoint.zero
-        // set frame to content size
-        self.scrollView.frame = CGRect.init(x: 0, y: 0, width: self.scrollView.contentSize.width, height: self.scrollView.contentSize.height)
-        // remove background
-//      self.scrollView.backgroundColor = UIColor.clear
-
+        var image = UIImage()
+        let savedContentOffset = scrollView.contentOffset
+        let savedFrame = scrollView.frame
+        let savedBackgroundColor = scrollView.backgroundColor
+        
+        UIGraphicsBeginImageContextWithOptions(scrollView.contentSize, false, 0.0)
         // make temp view with scroll view content size
-        // a workaround for issue when image on ipad was drawn incorrectly
-        let tempView = UIView(frame: CGRect.init(x: 0, y: 0, width: self.scrollView.contentSize.width, height: self.scrollView.contentSize.height))
-
+        let tempView = UIView(frame: CGRect.init(x: 0, y: 0, width: scrollView.contentSize.width, height: scrollView.contentSize.height))
+        // reset offset to top left point
+        scrollView.contentOffset = CGPoint.zero
+        // set frame to content size
+        scrollView.frame = CGRect.init(x: 0, y: 0, width: scrollView.contentSize.width, height: scrollView.contentSize.height)
+        // remove background
+        scrollView.backgroundColor = UIColor.clear
+        
         // save superview
-        let tempSuperView = self.scrollView.superview
+        let tempSuperView = scrollView.superview
         // remove scrollView from old superview
-        self.scrollView.removeFromSuperview()
+        scrollView.removeFromSuperview()
         // and add to tempView
-        tempView.addSubview(self.scrollView)
-
+        tempView.addSubview(scrollView)
+        
         // render view
-        // drawViewHierarchyInRect not working correctly
         tempView.layer.render(in: UIGraphicsGetCurrentContext()!)
         // and get image
         image = UIGraphicsGetImageFromCurrentImageContext()!
-
+        
         // and return everything back
         tempView.subviews[0].removeFromSuperview()
-        tempSuperView?.addSubview(self.scrollView)
+        tempSuperView?.addSubview(scrollView)
         
         // restore saved settings
-        self.scrollView.contentOffset = savedContentOffset
-        self.scrollView.frame = savedFrame
+        self.scrollView.contentOffset = savedContentOffset;
+        self.scrollView.frame = savedFrame;
         self.scrollView.backgroundColor = savedBackgroundColor
-
+        
         UIGraphicsEndImageContext()
-        tempSuperView?.subviews[0].removeFromSuperview()
-        view.addSubview(self.scrollView)
+        
         return image
-        }
-    
-        func showMailComposer() {
-            
-            guard MFMailComposeViewController.canSendMail() else {
-                //Show alert informing the user
-                return
-            }
-            
-            let composer = MFMailComposeViewController()
-            let none = K.Polish.none
-            composer.mailComposeDelegate = self
-            composer.setSubject(K.Polish.subject)
-            composer.setMessageBody("\(K.Polish.data1)\(nameTextField.text ?? none)\n \(K.Polish.data2)\(date)\n \(K.Polish.data3)\(workplaceTextField.text ?? none)\n \(K.Polish.data4)\(workDescriptionTextField.text ?? none)\n\n \(label1.text ?? none)\n \(K.Polish.comm)\(label1TextField.text ?? none)\n\n \(label2.text ?? none)\n \(K.Polish.comm)\(label2TextField.text ?? none)\n\n \(label3.text ?? none)\n \(K.Polish.comm)\(label3TextField.text ?? none)\n\n \(label4.text ?? none)\n \(K.Polish.comm)\(label4TextField.text ?? none)\n\n \(label5.text ?? none)\n \(K.Polish.comm)\(label5TextField.text ?? none)\n", isHTML: false)
-            
-            let myData: Data = screenShot.pngData()!
-            composer.addAttachmentData(myData, mimeType: "image/png", fileName: "Take5.png")
-            present(composer, animated: true)
-        }
     }
     
-    //MARK: - UITextFieldDelegate
-    extension ViewController: UITextFieldDelegate {
+    func showMailComposer() {
         
-        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            nameTextField.endEditing(true)
-            workplaceTextField.endEditing(true)
-            workDescriptionTextField.endEditing(true)
-            label1TextField.endEditing(true)
-            label2TextField.endEditing(true)
-            label3TextField.endEditing(true)
-            label4TextField.endEditing(true)
-            label5TextField.endEditing(true)
-            return true
+        guard MFMailComposeViewController.canSendMail() else {
+            //Show alert informing the user
+            return
         }
-    }
-    
-    //MARK: - MFMailComposeViewControllerDelegate
-    extension ViewController: MFMailComposeViewControllerDelegate {
         
-        func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-            
-            if let _ = error {
-                //Show error alert
-                controller.dismiss(animated: true)
-                return
-            }
-            
-            switch result {
-            case .cancelled:
-                print("Cancelled")
-            case .failed:
-                print("Failed to send")
-            case .saved:
-                print("Saved")
-            case .sent:
-                print("Email Sent")
-            @unknown default:
-                fatalError()
-            }
-            
+        let composer = MFMailComposeViewController()
+        let none = K.Polish.none
+        composer.mailComposeDelegate = self
+        composer.setSubject(K.Polish.subject)
+        composer.setMessageBody("\(K.Polish.data1)\(nameTextField.text ?? none)\n \(K.Polish.data2)\(date)\n \(K.Polish.data3)\(workplaceTextField.text ?? none)\n \(K.Polish.data4)\(workDescriptionTextField.text ?? none)\n\n \(label1.text ?? none)\n \(K.Polish.comm)\(label1TextField.text ?? none)\n\n \(label2.text ?? none)\n \(K.Polish.comm)\(label2TextField.text ?? none)\n\n \(label3.text ?? none)\n \(K.Polish.comm)\(label3TextField.text ?? none)\n\n \(label4.text ?? none)\n \(K.Polish.comm)\(label4TextField.text ?? none)\n\n \(label5.text ?? none)\n \(K.Polish.comm)\(label5TextField.text ?? none)\n", isHTML: false)
+        
+        let myData: Data = screenShot.pngData()!
+        composer.addAttachmentData(myData, mimeType: "image/png", fileName: "Take5.png")
+        present(composer, animated: true)
+        
+    }
+}
+
+//MARK: - UITextFieldDelegate
+extension PolishViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        nameTextField.endEditing(true)
+        workplaceTextField.endEditing(true)
+        workDescriptionTextField.endEditing(true)
+        label1TextField.endEditing(true)
+        label2TextField.endEditing(true)
+        label3TextField.endEditing(true)
+        label4TextField.endEditing(true)
+        label5TextField.endEditing(true)
+        return true
+    }
+}
+
+//MARK: - MFMailComposeViewControllerDelegate
+extension PolishViewController: MFMailComposeViewControllerDelegate {
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        
+        if let _ = error {
+            //Show error alert
             controller.dismiss(animated: true)
+            resetSegue()
+            return
         }
+        
+        switch result {
+        case .cancelled:
+            print("Cancelled")
+        case .failed:
+            print("Failed to send")
+        case .saved:
+            print("Saved")
+        case .sent:
+            print("Email Sent")
+        @unknown default:
+            fatalError()
+        }
+        
+        controller.dismiss(animated: true)
+        resetSegue()
+    }
 }

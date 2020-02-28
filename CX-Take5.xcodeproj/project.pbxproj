@@ -10,12 +10,12 @@
 		07BFFFBD38E5E38074A7D94F /* libPods-CX-Take5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF7311A9EED59CB46982D47 /* libPods-CX-Take5.a */; };
 		5F0D53BE23FECEFD0097E531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D53BD23FECEFD0097E531 /* AppDelegate.swift */; };
 		5F0D53C023FECEFD0097E531 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D53BF23FECEFD0097E531 /* SceneDelegate.swift */; };
-		5F0D53C223FECEFD0097E531 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D53C123FECEFD0097E531 /* ViewController.swift */; };
+		5F0D53C223FECEFD0097E531 /* PolishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D53C123FECEFD0097E531 /* PolishViewController.swift */; };
 		5F0D53C523FECEFD0097E531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D53C323FECEFD0097E531 /* Main.storyboard */; };
 		5F0D53C723FECEFE0097E531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D53C623FECEFE0097E531 /* Assets.xcassets */; };
 		5F0D53CA23FECEFE0097E531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D53C823FECEFE0097E531 /* LaunchScreen.storyboard */; };
 		5F55930E23FEE81F00FB60DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F55930D23FEE81F00FB60DF /* Constants.swift */; };
-		5FBB58AE240533CC008E52E4 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5FBB58AE240533CC008E52E4 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5FBB58AE240533CC008E52E4 /* BuildFile in Embed Frameworks */,
+				5FBB58AE240533CC008E52E4 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,7 +37,7 @@
 		5F0D53BA23FECEFD0097E531 /* CX-Take5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CX-Take5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F0D53BD23FECEFD0097E531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F0D53BF23FECEFD0097E531 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5F0D53C123FECEFD0097E531 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F0D53C123FECEFD0097E531 /* PolishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolishViewController.swift; sourceTree = "<group>"; };
 		5F0D53C423FECEFD0097E531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F0D53C623FECEFE0097E531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F0D53C923FECEFE0097E531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		5F0D53D223FECF720097E531 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5F0D53C123FECEFD0097E531 /* ViewController.swift */,
+				5F0D53C123FECEFD0097E531 /* PolishViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F0D53C223FECEFD0097E531 /* ViewController.swift in Sources */,
+				5F0D53C223FECEFD0097E531 /* PolishViewController.swift in Sources */,
 				5F55930E23FEE81F00FB60DF /* Constants.swift in Sources */,
 				5F0D53BE23FECEFD0097E531 /* AppDelegate.swift in Sources */,
 				5F0D53C023FECEFD0097E531 /* SceneDelegate.swift in Sources */,

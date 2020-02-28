@@ -10,16 +10,16 @@
         <!--Take5-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CX_Take5" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PolishViewController" customModule="CX_Take5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92e-df-cdY">
-                                <rect key="frame" x="0.0" y="88" width="414" height="1078"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5f-pi-fYD">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1078"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1095"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6RG-qS-Qnp">
                                                 <rect key="frame" x="0.0" y="10" width="414" height="273.5"/>
@@ -169,13 +169,13 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="warningLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UH-eI-Rf1">
-                                                <rect key="frame" x="8" y="995.5" width="398" height="21.5"/>
+                                                <rect key="frame" x="8" y="966.5" width="398" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDl-3y-EXN">
-                                                <rect key="frame" x="8" y="1025" width="398" height="45"/>
+                                                <rect key="frame" x="8" y="1033" width="398" height="50"/>
                                                 <color key="backgroundColor" red="0.61251091957092285" green="0.78587251901626587" blue="0.96080547571182251" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Gzc-3m-HZA"/>
@@ -380,7 +380,7 @@
                     <navigationItem key="navigationItem" title="Take5" id="iSJ-cS-uQB">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="Hc9-Nf-2Mv">
                             <view key="customView" contentMode="scaleToFill" id="6HH-kA-p5H">
-                                <rect key="frame" x="302" y="5.5" width="92" height="33"/>
+                                <rect key="frame" x="302" y="6" width="92" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCMX" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="udG-bL-Qj2">
@@ -434,7 +434,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2868.115942028986" y="115.84821428571428"/>
+            <point key="canvasLocation" x="3610" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kIp-G6-SDv">
@@ -451,12 +451,51 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5Rg-Wu-b1y"/>
+                        <segue destination="dR1-KL-RNc" kind="relationship" relationship="rootViewController" id="ixz-rk-4Id"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4fU-a7-nZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="115.84821428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X50-Yd-t5u">
+            <objects>
+                <viewController id="dR1-KL-RNc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NYa-Ei-cis">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JJ-sG-wbb">
+                                <rect key="frame" x="139.5" y="138" width="135" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nv-p5-83z">
+                                <rect key="frame" x="160" y="242" width="94" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Polski"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="reloadView" id="GWt-pM-Wy2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90210968255996704" green="0.94852226972579956" blue="0.98823517560958862" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="7Nv-p5-83z" firstAttribute="top" secondItem="5JJ-sG-wbb" secondAttribute="bottom" constant="70" id="Kee-oN-YQu"/>
+                            <constraint firstItem="7Nv-p5-83z" firstAttribute="centerX" secondItem="NYa-Ei-cis" secondAttribute="centerX" id="VB6-g8-1RF"/>
+                            <constraint firstItem="5JJ-sG-wbb" firstAttribute="top" secondItem="pYU-5r-Nyy" secondAttribute="top" constant="50" id="j8O-N4-mbW"/>
+                            <constraint firstItem="5JJ-sG-wbb" firstAttribute="centerX" secondItem="NYa-Ei-cis" secondAttribute="centerX" id="sdl-Cu-zcA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pYU-5r-Nyy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ws0-K7-fEZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8mo-1D-kKw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2779.7101449275365" y="115.84821428571428"/>
         </scene>
     </scenes>
     <resources>

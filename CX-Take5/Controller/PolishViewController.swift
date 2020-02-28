@@ -54,7 +54,6 @@ class PolishViewController: UIViewController {
     var dateHolder = Date()
     var screenShot = UIImage()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -109,12 +108,7 @@ class PolishViewController: UIViewController {
         DispatchQueue.main.async {
             self.performSegue(withIdentifier: "endSegue", sender: nil)
         }
-        
-        Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { (Timer) in
-            self.navigationController?.popViewController(animated: false)
-        }
     }
-    
     
     //MARK: - E-mail functionality
     @IBAction func sendPressed(_ sender: UIButton) {
@@ -161,6 +155,14 @@ class PolishViewController: UIViewController {
         self.scrollView.contentOffset = savedContentOffset;
         self.scrollView.frame = savedFrame;
         self.scrollView.backgroundColor = savedBackgroundColor
+        
+        NSLayoutConstraint.activate([
+            scrollView.widthAnchor.constraint(equalToConstant: view.frame.width),
+            scrollView.heightAnchor.constraint(equalToConstant: view.frame.height),
+            scrollView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            scrollView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+        ])
+        updateViewConstraints()
         
         UIGraphicsEndImageContext()
         

@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92e-df-cdY">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="1078"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5f-pi-fYD">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1095"/>
@@ -430,11 +430,53 @@
                         <outlet property="warningLabel" destination="7UH-eI-Rf1" id="Jvh-cu-Ue4"/>
                         <outlet property="workDescriptionTextField" destination="g8o-ZK-iPP" id="0Yg-5G-D6J"/>
                         <outlet property="workplaceTextField" destination="U4v-Az-sTa" id="HGi-I1-jBK"/>
+                        <segue destination="H2E-rN-8No" kind="presentation" identifier="endSegue" id="OdW-4b-kOV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3610" y="116"/>
+        </scene>
+        <!--End View Controller-->
+        <scene sceneID="pD5-Y4-LQL">
+            <objects>
+                <viewController id="H2E-rN-8No" customClass="EndViewController" customModule="CX_Take5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="peT-SF-pOY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3F0-x4-sMX">
+                                <rect key="frame" x="182" y="411" width="50.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Amc-QA-Xnd">
+                                <rect key="frame" x="252.5" y="401" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="NNf-lc-9JB"/>
+                                    <constraint firstAttribute="height" constant="40" id="kVG-Dt-dNv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89037251472473145" green="0.94846910238265991" blue="0.99215763807296753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="3F0-x4-sMX" firstAttribute="centerX" secondItem="peT-SF-pOY" secondAttribute="centerX" id="2m6-1q-nN9"/>
+                            <constraint firstItem="Amc-QA-Xnd" firstAttribute="leading" secondItem="3F0-x4-sMX" secondAttribute="trailing" constant="20" id="7FL-yG-tcj"/>
+                            <constraint firstItem="3F0-x4-sMX" firstAttribute="centerY" secondItem="peT-SF-pOY" secondAttribute="centerY" id="duW-S6-4gE"/>
+                            <constraint firstItem="Amc-QA-Xnd" firstAttribute="centerY" secondItem="peT-SF-pOY" secondAttribute="centerY" id="oVK-aM-mpY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DFw-sI-XXb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d1Q-dt-O0I"/>
+                    <connections>
+                        <outlet property="endLabel" destination="3F0-x4-sMX" id="ltO-sN-V1l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjY-Bg-s8u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4447.826086956522" y="115.84821428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kIp-G6-SDv">
@@ -458,10 +500,10 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="115.84821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Language View Controller-->
         <scene sceneID="X50-Yd-t5u">
             <objects>
-                <viewController id="dR1-KL-RNc" sceneMemberID="viewController">
+                <viewController id="dR1-KL-RNc" customClass="LanguageViewController" customModule="CX_Take5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NYa-Ei-cis">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -472,12 +514,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nv-p5-83z">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nv-p5-83z">
                                 <rect key="frame" x="160" y="242" width="94" height="50"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Polski"/>
+                                <color key="backgroundColor" red="0.80282970650555341" green="0.92618207327307089" blue="0.99215763807296753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title=" POLSKI ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="polishButtonPressed:" destination="dR1-KL-RNc" eventType="touchUpInside" id="Q0A-q6-WVL"/>
                                     <segue destination="BYZ-38-t0r" kind="push" identifier="reloadView" id="GWt-pM-Wy2"/>
                                 </connections>
                             </button>
@@ -492,6 +544,10 @@
                         <viewLayoutGuide key="safeArea" id="pYU-5r-Nyy"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ws0-K7-fEZ"/>
+                    <connections>
+                        <outlet property="languageButton" destination="7Nv-p5-83z" id="weE-0X-mOs"/>
+                        <outlet property="languageLabel" destination="5JJ-sG-wbb" id="CGJ-At-XRn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mo-1D-kKw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

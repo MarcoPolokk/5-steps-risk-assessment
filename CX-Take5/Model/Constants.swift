@@ -29,14 +29,11 @@ struct K {
         
         static let subject = "Wykonano ocenę ryzyka Take5"
         static let none = "Brak"
-        
         static let data1 = "Imię i nazwisko: "
         static let data2 = "Data: "
         static let data3 = "Miejsce: "
         static let data4 = "Opis pracy: "
         static let comm = "Komentarz: "
-        
-        
-//        static let message = "Imię i nazwisko:\(nameTextField)/n Data:\()/n Miejsce:\()/n Opis pracy:\()/n/n 1. Zatrzymaj się, rozejrzyj, sprawdź otoczenie/n Komentarz:\()/n 2. Przemyśl wykonywaną pracę/n Komentarz:\()/n 3. Zidentyfikuj Zagrożenia/n Komentarz:\()/n 4. Kontroluj oraz Komunikuj Ryzyko Komentarz:\()/n 5. Czy mogę wykonać to zadanie bezpiecznie?/n Komentarz:\()/n"
+        static let end = "WYSŁANO"
     }
 }

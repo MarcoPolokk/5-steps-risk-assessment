@@ -11,8 +11,13 @@ import MessageUI
 import M13Checkbox
 import CoreGraphics
 
-//mozna zrobic inne VC ktore dziedzicza ta i tylko overridowac vievDidLoad
+protocol DidSendDelegate {
+    func updateLabel(updatedLabel: String)
+}
+
 class PolishViewController: UIViewController {
+    
+    var delegate: DidSendDelegate?
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var workplaceTextField: UITextField!
@@ -62,16 +67,6 @@ class PolishViewController: UIViewController {
         label4TextField.delegate = self
         label5TextField.delegate = self
         
-        label1.text = K.Polish.label1Text
-        label2.text = K.Polish.label2Text
-        label2Description.text = K.Polish.label2Description
-        label3.text = K.Polish.label3Text
-        label3Description.text = K.Polish.label3Description
-        label4.text = K.Polish.label4Text
-        label4Description.text = K.Polish.label4Description
-        label5.text = K.Polish.label5Text
-        warningLabel.text = K.Polish.warningLabel
-        
         checkbox1._IBStateChangeAnimation = K.Other.animation
         checkbox2._IBStateChangeAnimation = K.Other.animation
         checkbox3._IBStateChangeAnimation = K.Other.animation
@@ -82,6 +77,16 @@ class PolishViewController: UIViewController {
         checkbox3.boxType = .square
         checkbox4.boxType = .square
         checkbox5.boxType = .square
+        
+        label1.text = K.Polish.label1Text
+        label2.text = K.Polish.label2Text
+        label2Description.text = K.Polish.label2Description
+        label3.text = K.Polish.label3Text
+        label3Description.text = K.Polish.label3Description
+        label4.text = K.Polish.label4Text
+        label4Description.text = K.Polish.label4Description
+        label5.text = K.Polish.label5Text
+        warningLabel.text = K.Polish.warningLabel
         
         scrollView.keyboardDismissMode = .onDrag
         
@@ -101,7 +106,13 @@ class PolishViewController: UIViewController {
     }
     
     func resetSegue() {
-        self.navigationController?.popViewController(animated: false)
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "endSegue", sender: nil)
+        }
+        
+        Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { (Timer) in
+            self.navigationController?.popViewController(animated: false)
+        }
     }
     
     
@@ -133,7 +144,7 @@ class PolishViewController: UIViewController {
         // save superview
         let tempSuperView = scrollView.superview
         // remove scrollView from old superview
-        scrollView.removeFromSuperview()
+        scrollView.sendSubviewToBack(view)
         // and add to tempView
         tempView.addSubview(scrollView)
         
@@ -143,7 +154,7 @@ class PolishViewController: UIViewController {
         image = UIGraphicsGetImageFromCurrentImageContext()!
         
         // and return everything back
-        tempView.subviews[0].removeFromSuperview()
+        tempView.subviews[0].sendSubviewToBack(view)
         tempSuperView?.addSubview(scrollView)
         
         // restore saved settings
@@ -201,19 +212,25 @@ extension PolishViewController: MFMailComposeViewControllerDelegate {
         if let _ = error {
             //Show error alert
             controller.dismiss(animated: true)
+            let label = "Błąd"
+            delegate?.updateLabel(updatedLabel: label)
             resetSegue()
             return
         }
         
         switch result {
         case .cancelled:
-            print("Cancelled")
+            let label = "Anulowano"
+            delegate?.updateLabel(updatedLabel: label)
         case .failed:
-            print("Failed to send")
+            let label = "Błąd przy wysyłaniu"
+            delegate?.updateLabel(updatedLabel: label)
         case .saved:
-            print("Saved")
+            let label = "Zapisano"
+            delegate?.updateLabel(updatedLabel: label)
         case .sent:
-            print("Email Sent")
+            let label = "Wysłano"
+            delegate?.updateLabel(updatedLabel: label)
         @unknown default:
             fatalError()
         }

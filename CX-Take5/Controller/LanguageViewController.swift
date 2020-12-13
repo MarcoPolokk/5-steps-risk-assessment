@@ -11,7 +11,6 @@ import UIKit
 class LanguageViewController: UIViewController {
     
     @IBOutlet weak var languageLabel: UILabel!
-    
     @IBOutlet weak var languageButton: UIButton!
     
     @IBAction func polishButtonPressed(_ sender: UIButton) {

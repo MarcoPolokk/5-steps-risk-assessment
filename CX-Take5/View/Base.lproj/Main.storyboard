@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3cm-Jb-zhb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3cm-Jb-zhb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -171,10 +173,10 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="warningLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7UH-eI-Rf1">
                                                 <rect key="frame" x="8" y="946.5" width="398" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="systemPinkColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDl-3y-EXN">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDl-3y-EXN">
                                                 <rect key="frame" x="8" y="1013" width="398" height="50"/>
                                                 <color key="backgroundColor" red="0.61251091957092285" green="0.78587251901626587" blue="0.96080547571182251" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -182,7 +184,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" title="WYŚLIJ">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" systemColor="darkTextColor"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="sendPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dl4-3W-2WB"/>
@@ -191,7 +193,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SW0-op-DEl" customClass="M13Checkbox" customModule="M13Checkbox">
                                                 <rect key="frame" x="371" y="281.5" width="35" height="35"/>
                                                 <color key="backgroundColor" red="0.89037251472473145" green="0.94846910238265991" blue="0.99215763807296753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" systemColor="systemPinkColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="SKx-nz-4TQ"/>
                                                     <constraint firstAttribute="height" constant="35" id="vIf-Tk-z3X"/>
@@ -201,7 +203,7 @@
                                                         <real key="value" value="1.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
-                                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" systemColor="systemPinkColor"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
                                                         <real key="value" value="1.8"/>
@@ -211,7 +213,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMk-Ab-NYJ" userLabel="Checkbox2" customClass="M13Checkbox" customModule="M13Checkbox">
                                                 <rect key="frame" x="371" y="395.5" width="35" height="35"/>
                                                 <color key="backgroundColor" red="0.89037251470000001" green="0.94846910240000004" blue="0.99215763810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" systemColor="systemPinkColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="WBH-Af-iah"/>
                                                     <constraint firstAttribute="width" constant="35" id="k3a-Og-kXq"/>
@@ -221,7 +223,7 @@
                                                         <real key="value" value="1.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
-                                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" systemColor="systemPinkColor"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="square"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
@@ -232,7 +234,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9K7-Qg-NVz" userLabel="Checkbox3" customClass="M13Checkbox" customModule="M13Checkbox">
                                                 <rect key="frame" x="371" y="531.5" width="35" height="35"/>
                                                 <color key="backgroundColor" red="0.89037251470000001" green="0.94846910240000004" blue="0.99215763810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" systemColor="systemPinkColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="ZKs-0t-4w4"/>
                                                     <constraint firstAttribute="width" constant="35" id="glM-AA-omX"/>
@@ -242,7 +244,7 @@
                                                         <real key="value" value="1.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
-                                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" systemColor="systemPinkColor"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="square"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
@@ -253,7 +255,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVU-CQ-hXl" userLabel="Checkbox4" customClass="M13Checkbox" customModule="M13Checkbox">
                                                 <rect key="frame" x="371" y="667.5" width="35" height="35"/>
                                                 <color key="backgroundColor" red="0.89037251470000001" green="0.94846910240000004" blue="0.99215763810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" systemColor="systemPinkColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="35" id="30g-3J-xUt"/>
                                                     <constraint firstAttribute="height" constant="35" id="729-mb-tkR"/>
@@ -263,7 +265,7 @@
                                                         <real key="value" value="1.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
-                                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" systemColor="systemPinkColor"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="square"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
@@ -274,7 +276,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fg-Hk-i87" userLabel="Checkbox5" customClass="M13Checkbox" customModule="M13Checkbox">
                                                 <rect key="frame" x="371" y="803.5" width="35" height="35"/>
                                                 <color key="backgroundColor" red="0.89037251470000001" green="0.94846910240000004" blue="0.99215763810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" systemColor="systemPinkColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="Ski-aj-hF9"/>
                                                     <constraint firstAttribute="width" constant="35" id="eoY-iv-WSw"/>
@@ -284,7 +286,7 @@
                                                         <real key="value" value="1.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
-                                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" systemColor="systemPinkColor"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="square"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
@@ -368,14 +370,14 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="92e-df-cdY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ARe-eb-hRY"/>
                             <constraint firstItem="92e-df-cdY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Dk7-ln-qji"/>
                             <constraint firstItem="92e-df-cdY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jzy-7b-9NK"/>
                             <constraint firstItem="92e-df-cdY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vjo-Mx-oLY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Take5" id="iSJ-cS-uQB">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="Hc9-Nf-2Mv">
@@ -392,7 +394,7 @@
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="udG-bL-Qj2" secondAttribute="trailing" id="dhl-5j-exX"/>
                                     <constraint firstAttribute="bottom" secondItem="udG-bL-Qj2" secondAttribute="bottom" id="qwQ-7A-LUe"/>
@@ -454,7 +456,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dp1-8H-eRU" customClass="M13Checkbox" customModule="M13Checkbox">
                                 <rect key="frame" x="268.5" y="401" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.89037251470000001" green="0.94846910240000004" blue="0.99215763810000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="aoq-6k-z2U"/>
                                     <constraint firstAttribute="width" constant="40" id="b5V-vr-7jN"/>
@@ -464,7 +466,7 @@
                                         <real key="value" value="1.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="secondaryTintColor">
-                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" systemColor="systemPinkColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
                                         <real key="value" value="1.8"/>
@@ -474,6 +476,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="DFw-sI-XXb"/>
                         <color key="backgroundColor" red="0.89037251472473145" green="0.94846910238265991" blue="0.99215763807296753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="3F0-x4-sMX" firstAttribute="centerX" secondItem="peT-SF-pOY" secondAttribute="centerX" id="2m6-1q-nN9"/>
@@ -481,7 +484,6 @@
                             <constraint firstItem="Dp1-8H-eRU" firstAttribute="leading" secondItem="3F0-x4-sMX" secondAttribute="trailing" constant="25" id="Y5f-hI-AWH"/>
                             <constraint firstItem="3F0-x4-sMX" firstAttribute="centerY" secondItem="peT-SF-pOY" secondAttribute="centerY" id="duW-S6-4gE"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="DFw-sI-XXb"/>
                     </view>
                     <navigationItem key="navigationItem" id="d1Q-dt-O0I"/>
                     <connections>
@@ -503,7 +505,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                            <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" systemColor="systemPinkColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -524,9 +526,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JJ-sG-wbb">
-                                <rect key="frame" x="135" y="138" width="144" height="36"/>
+                                <rect key="frame" x="135.5" y="138" width="143" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nv-p5-83z">
@@ -534,7 +536,7 @@
                                 <color key="backgroundColor" red="0.80282970650555341" green="0.92618207327307089" blue="0.99215763807296753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" POLSKI ">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="darkTextColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -550,6 +552,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="pYU-5r-Nyy"/>
                         <color key="backgroundColor" red="0.90210968255996704" green="0.94852226972579956" blue="0.98823517560958862" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="7Nv-p5-83z" firstAttribute="top" secondItem="5JJ-sG-wbb" secondAttribute="bottom" constant="70" id="Kee-oN-YQu"/>
@@ -557,7 +560,6 @@
                             <constraint firstItem="5JJ-sG-wbb" firstAttribute="top" secondItem="pYU-5r-Nyy" secondAttribute="top" constant="50" id="j8O-N4-mbW"/>
                             <constraint firstItem="5JJ-sG-wbb" firstAttribute="centerX" secondItem="NYa-Ei-cis" secondAttribute="centerX" id="sdl-Cu-zcA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pYU-5r-Nyy"/>
                     </view>
                     <navigationItem key="navigationItem" title="Take5" id="Ws0-K7-fEZ"/>
                     <connections>
@@ -572,5 +574,20 @@
     </scenes>
     <resources>
         <image name="logoCMX" width="240" height="84"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

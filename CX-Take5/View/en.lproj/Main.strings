@@ -1,0 +1,72 @@
+
+/* Class = "UILabel"; text = "4. Kontroluj oraz komunikuj ryzyko"; ObjectID = "0Oq-Y6-yWH"; */
+"0Oq-Y6-yWH.text" = "4. Kontroluj oraz komunikuj ryzyko";
+
+/* Class = "UILabel"; text = "2. Przemyśl wykonywaną pracę"; ObjectID = "0TQ-QM-DWg"; */
+"0TQ-QM-DWg.text" = "2. Przemyśl wykonywaną pracę";
+
+/* Class = "UILabel"; text = "LABEL"; ObjectID = "3F0-x4-sMX"; */
+"3F0-x4-sMX.text" = "LABEL";
+
+/* Class = "UILabel"; text = "label3Description"; ObjectID = "3Xo-XP-3ac"; */
+"3Xo-XP-3ac.text" = "label3Description";
+
+/* Class = "UIButton"; normalTitle = "🇬🇧"; ObjectID = "7Nv-p5-83z"; */
+"7Nv-p5-83z.normalTitle" = "🇬🇧";
+
+/* Class = "UILabel"; text = "warningLabel"; ObjectID = "7UH-eI-Rf1"; */
+"7UH-eI-Rf1.text" = "warningLabel";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Hc9-Nf-2Mv"; */
+"Hc9-Nf-2Mv.title" = "Item";
+
+/* Class = "UILabel"; text = "Wybierz datę"; ObjectID = "J3Y-yJ-jgM"; */
+"J3Y-yJ-jgM.text" = "Wybierz datę";
+
+/* Class = "UITextField"; placeholder = "Miejsce"; ObjectID = "U4v-Az-sTa"; */
+"U4v-Az-sTa.placeholder" = "Miejsce";
+
+/* Class = "UITextField"; placeholder = "Imię i nazwisko"; ObjectID = "UaP-WR-bW4"; */
+"UaP-WR-bW4.placeholder" = "Imię i nazwisko";
+
+/* Class = "UINavigationItem"; title = "Take5"; ObjectID = "Ws0-K7-fEZ"; */
+"Ws0-K7-fEZ.title" = "Take5";
+
+/* Class = "UIButton"; normalTitle = "WYŚLIJ"; ObjectID = "eDl-3y-EXN"; */
+"eDl-3y-EXN.normalTitle" = "WYŚLIJ";
+
+/* Class = "UITextField"; placeholder = "Opis pracy"; ObjectID = "g8o-ZK-iPP"; */
+"g8o-ZK-iPP.placeholder" = "Opis pracy";
+
+/* Class = "UINavigationItem"; title = "Take5"; ObjectID = "iSJ-cS-uQB"; */
+"iSJ-cS-uQB.title" = "Take5";
+
+/* Class = "UITextField"; placeholder = "Komentarz"; ObjectID = "jxA-lg-KQH"; */
+"jxA-lg-KQH.placeholder" = "Komentarz";
+
+/* Class = "UILabel"; text = "5. Czy mogę wykonać to zadanie bezpiecznie?"; ObjectID = "lRy-LV-6Gy"; */
+"lRy-LV-6Gy.text" = "5. Czy mogę wykonać to zadanie bezpiecznie?";
+
+/* Class = "UITextField"; placeholder = "Komentarz"; ObjectID = "mq5-6d-gIs"; */
+"mq5-6d-gIs.placeholder" = "Komentarz";
+
+/* Class = "UITextField"; placeholder = "Komentarz"; ObjectID = "nvc-0g-hSO"; */
+"nvc-0g-hSO.placeholder" = "Komentarz";
+
+/* Class = "UITextField"; placeholder = "Komentarz"; ObjectID = "sxL-dw-uE8"; */
+"sxL-dw-uE8.placeholder" = "Komentarz";
+
+/* Class = "UILabel"; text = "label2Description"; ObjectID = "unH-b0-jyS"; */
+"unH-b0-jyS.text" = "label2Description";
+
+/* Class = "UILabel"; text = "label4Description"; ObjectID = "wDL-TU-QDX"; */
+"wDL-TU-QDX.text" = "label4Description";
+
+/* Class = "UITextField"; placeholder = "Komentarz"; ObjectID = "x4w-Eu-52A"; */
+"x4w-Eu-52A.placeholder" = "Komentarz";
+
+/* Class = "UILabel"; text = "1. Zatrzymaj się, rozejrzyj, sprawdź otoczenie"; ObjectID = "yYJ-JP-xse"; */
+"yYJ-JP-xse.text" = "1. Zatrzymaj się, rozejrzyj, sprawdź otoczenie";
+
+/* Class = "UILabel"; text = "3. Zidentyfikuj zagrożenia"; ObjectID = "zLG-gT-yVP"; */
+"zLG-gT-yVP.text" = "3. Zidentyfikuj zagrożenia";

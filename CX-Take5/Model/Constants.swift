@@ -10,14 +10,7 @@ import UIKit
 
 struct K {
     
-    struct Other {
-        
-        static let animation = "BounceFill"
-        static let checked = "checked"
-        static let green = #colorLiteral(red: 0.1960784314, green: 0.8431372549, blue: 0.2941176471, alpha: 1)
-        static let red = #colorLiteral(red: 1, green: 0.2156862745, blue: 0.3725490196, alpha: 1)
-        static let polish = "pl_PL"
-    }
+    //MARK:- Polish Language Inputs
     
     struct Polish {
         
@@ -47,4 +40,45 @@ struct K {
         
         
     }
+    
+    //MARK:- English Language Inputs
+    
+    struct English {
+        
+        static let label1Text = "1. Stop, look around and check your surroundings"
+        static let label2Text = "2. Think about the work you need to do"
+        static let label2Description = "• Do I know how to safely complete the task?\n• Do I have appropriate personal protective equipment?\n• Do I need help from colleagues?"
+        static let label3Text = "3. Identify the threats"
+        static let label3Description = "• What could go wrong?\n• How can I hurt myself or others?"
+        static let label4Text = "4. Control and communicate the risk"
+        static let label4Description = "• What I need to keep myself safe"
+        static let label5Text = "5. Can I do this task safely?"
+        static let warningLabel = "If you cannot meet all the checkpoints, do not start work!\nReport to your supervisor"
+        
+        static let subject = "Take5 risk assessment performed"
+        static let none = "Lack"
+        static let data1 = "First name and Surname: "
+        static let data2 = "Date: "
+        static let data3 = "Place: "
+        static let data4 = "Work description: "
+        static let comm = "Comment: "
+        
+        static let cancelled = "Canceled"
+        static let failed = "Error sending"
+        static let saved = "Saved"
+        static let sent = "Sent"
+        static let error = "Error"
+    }
+    
+    //MARK:- Other Inputs
+    
+    struct Other {
+        
+        static let animation = "BounceFill"
+        static let checked = "checked"
+        static let green = #colorLiteral(red: 0.1960784314, green: 0.8431372549, blue: 0.2941176471, alpha: 1)
+        static let red = #colorLiteral(red: 1, green: 0.2156862745, blue: 0.3725490196, alpha: 1)
+        static let polish = "pl_PL"
+    }
+    
 }

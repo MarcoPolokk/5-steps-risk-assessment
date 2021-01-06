@@ -11,8 +11,8 @@
 /* Class = "UILabel"; text = "label3Description"; ObjectID = "3Xo-XP-3ac"; */
 "3Xo-XP-3ac.text" = "label3Description";
 
-/* Class = "UIButton"; normalTitle = "🇵🇱"; ObjectID = "7Nv-p5-83z"; */
-"7Nv-p5-83z.normalTitle" = "🇵🇱";
+/* Class = "UIButton"; normalTitle = "🇬🇧"; ObjectID = "7Nv-p5-83z"; */
+"7Nv-p5-83z.normalTitle" = "🇬🇧";
 
 /* Class = "UILabel"; text = "warningLabel"; ObjectID = "7UH-eI-Rf1"; */
 "7UH-eI-Rf1.text" = "warningLabel";

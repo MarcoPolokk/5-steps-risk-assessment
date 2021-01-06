@@ -9,14 +9,24 @@
 import UIKit
 
 class LanguageViewController: UIViewController {
-    
-    @IBOutlet weak var languageLabel: UILabel!
-    @IBOutlet weak var languageButton: UIButton!
+
+    @IBOutlet weak var polishButton: UIButton!
+    @IBOutlet weak var englishButton: UIButton!
     
     @IBAction func polishButtonPressed(_ sender: UIButton) {
     }
     
+    @IBAction func englishButtonPressed(_ sender: UIButton) {
+    }
+    
+    override func viewDidLoad() {
+        polishButton.titleLabel?.text = "🇵🇱"
+        englishButton.titleLabel?.text = "🇬🇧"
+    }
+    
 }
+
+//MARK:- IB Extensions
 
 @IBDesignable extension UIButton {
 
@@ -48,4 +58,5 @@ class LanguageViewController: UIViewController {
             return UIColor(cgColor: color)
         }
     }
+    
 }

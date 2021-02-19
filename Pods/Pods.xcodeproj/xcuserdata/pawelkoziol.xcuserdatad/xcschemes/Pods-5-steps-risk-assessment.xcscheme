@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7111E54EAE43E89F451A75076C3525ED"
-               BuildableName = "libM13Checkbox.a"
-               BlueprintName = "M13Checkbox"
+               BlueprintIdentifier = "D85977A9DDB089EA22C220C493623B87"
+               BuildableName = "libPods-5-steps-risk-assessment.a"
+               BlueprintName = "Pods-5-steps-risk-assessment"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

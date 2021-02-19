@@ -1,6 +1,0 @@
-module Pods_CX_Take5 {
-  umbrella header "Pods-CX-Take5-umbrella.h"
-
-  export *
-  module * { export * }
-}

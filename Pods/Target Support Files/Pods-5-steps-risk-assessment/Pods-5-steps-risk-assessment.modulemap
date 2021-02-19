@@ -1,0 +1,6 @@
+module Pods_5_steps_risk_assessment {
+  umbrella header "Pods-5-steps-risk-assessment-umbrella.h"
+
+  export *
+  module * { export * }
+}

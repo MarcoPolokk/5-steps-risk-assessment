@@ -1,6 +1,6 @@
 # 📊 5-steps-risk-assessment<br/>
 
-Health & Safety App made for heavy industry, a quick way to make a risk assessment before starting the work. You can send a mail with few taps directly to your supervisor.<br/>
+Health & Safety App made for heavy industry, a quick way to make a risk assessment before starting the work.<br/> You can send a mail with few taps directly to your supervisor.<br/>
 
 **This app uses:**<br/>
 -MVC<br/>
